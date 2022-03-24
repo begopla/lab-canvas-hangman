@@ -47,7 +47,7 @@ Let's start with properties. `Hangman` should have the following properties:
 
 - **words** - an `array` to store all the words that could be given to a player to guess. When the class is instantiated, all the words passed to the constructor as an argument will be saved in this property.
 
-- **secretWord** - here we will store the word that has been picked as a secret word for the current game. Every time a new game starts, a random word from the `this.words` array needs to be picked as the secret word to be guessed by the player. That is, when the class is instantiated, call the method `pickWord()` and save the result to the property `secretWord`.
+- **secretWord** - here we will store the wr. That is, when the class is instantiated, call the method `pickWord()` and saveord that has been picked as a secret word for the current game. Every time a new game starts, a random word from the `this.words` array needs to be picked as the secret word to be guessed by the playe the result to the property `secretWord`.
 
 - **letters** - an `array` in which we will store the letters that the user has already picked while trying to guess the secret word. It is important to keep the track of these letters so we can, later on, apply some logic to prevent users from repeating them.
 

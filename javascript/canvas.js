@@ -122,11 +122,16 @@ class HangmanCanvas {
   winner() {
     
       console.log('Congratulations you have won the game!')
-     
       setTimeout(()=>{
-     this.context.clearRect(0,0,1200,800)
-      },2000)
-  }
+        this.context.clearRect(0,0,1200,800) 
+      },1000)
+      
+      const img = new Image();
+      let imgScale = 640/480;
+      img.onload = this.context.drawImage(img, 0, 0,150*imgScale,150);
+      
+      img.src = 'https://images.pexels.com/photos/2403474/pexels-photo-2403474.jpeg?cs=srgb&dl=pexels-run-ffwpu-2403474.jpg';
+    }
 }
 
     
